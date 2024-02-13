@@ -6,7 +6,7 @@
           <v-card class="card-home" min-width="500" max-width="500" elevation="16">
             <v-card-title>
               <v-img class="mx-auto" :width="300" aspect-ratio="16/9" cover
-                src="../assets/logotipo_aglearnhub.jpg"></v-img>
+                src="../assets/logotipo_aglearnhub.png"></v-img>
             </v-card-title>
             <v-card-item>
               <v-text-field label="E-mail" :rules="emailRules"></v-text-field>
@@ -16,14 +16,14 @@
             <p class="login-text-social">
               Faça login com suas redes sociais:
             </p>
-            <v-card-item class="footer-login">
-              <v-btn color="red-accent-3" class="buttons-footer" prepend-icon="mdi-google">
+            <v-card-item>
+              <v-btn color="red-accent-3" class="ma-1" prepend-icon="mdi-google">
                 Google
               </v-btn>
-              <v-btn class="buttons-footer" prepend-icon="mdi-linkedin">
+              <v-btn class="ma-1" prepend-icon="mdi-linkedin">
                 Linkedin
               </v-btn>
-              <v-btn color="blue-darken-2" class="buttons-footer" prepend-icon="mdi-facebook">
+              <v-btn color="blue-darken-2" class="ma-1" prepend-icon="mdi-facebook">
                 Facebook
               </v-btn>
             </v-card-item>
@@ -53,6 +53,10 @@ export default {
   width: 100%;
 }
 
+/* .v-card{
+  background-color: rgb(255,255,255,0.5);
+} */
+
 .login-text-social{
   font-size: 0.8em;
   color: gray;
@@ -63,7 +67,4 @@ export default {
   margin-right: 10%;
 }
 
-.footer-login .buttons-footer {
-  margin: 10px;
-}
 </style>
